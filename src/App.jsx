@@ -13,9 +13,20 @@ function App() {
     <>
       <Header />
       <Profile /><br />
-
+      <User name= "Ghulam" title="Frontend Developer" email="ghulam@gmail.com"/>
+      <User name= "Ammar" title="Backend Developer" email="ammar@gmail.com"/>
       <button onClick={handleClick}>Like ({likes})</button>
       {/*<Header author="Sandika Galih"/>*/}
+    </>
+  );
+}
+
+const User = (props) => {
+  return (
+    <>
+      <h1>{props.name}</h1>
+      <h1>{props.title}</h1>
+      <h1>{props.email}</h1>
     </>
   );
 }
