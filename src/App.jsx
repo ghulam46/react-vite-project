@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import Header from './component/Header';
+import Profile from './component/Profile';
 
 function App() {
   const [likes, setLikes] = useState(0);
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <Profile /><br />
 
       <button onClick={handleClick}>Like ({likes})</button>
       {/*<Header author="Sandika Galih"/>*/}
