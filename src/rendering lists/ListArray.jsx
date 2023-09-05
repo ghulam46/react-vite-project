@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../App.css";
 
 export default function ListArray() {
@@ -16,12 +17,16 @@ export default function ListArray() {
             })} */}
             
             {users.map((user, key) => {
-                return (
-                    <div key={key}>
-                        {user.name} {user.age}
-                    </div>
-                );
+                return <User name={user.name} age={user.age} key={key}/>;
             })}
+        </div>
+    );
+}
+
+const User = (props) => {
+    return(
+        <div>
+            {props.name} {props.age}
         </div>
     );
 }

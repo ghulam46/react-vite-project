@@ -7,7 +7,7 @@ import AppRl from '../src/rendering lists/App.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <ListArray /> */}
-    <AppRl />
+    <ListArray />
+    {/* <AppRl /> */}
   </React.StrictMode>,
 )
