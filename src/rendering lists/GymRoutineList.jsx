@@ -7,7 +7,7 @@ function Ceklist({name, isChecked}) {
 export default function GymRoutineList() {
 
     return(
-        <section className="App">
+        <section>
             <h1 className="text-3xl text-blue-800">My Workout Routine</h1>
             <ul>
                 <Ceklist 
