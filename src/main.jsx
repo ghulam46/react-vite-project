@@ -8,8 +8,9 @@ import './index.css'
 // import AppRl from '../src/rendering lists/App.jsx'
 // import Planets from './rendering lists/Planets.jsx'
 // import GymRoutineList from './rendering lists/GymRoutineList'
-import UseState from './state/UseState.jsx'
+// import UseState from './state/UseState.jsx'
 // import InputValue from './state/InputValue'
+import ShowHide from './state/showHide'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,7 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <AppRl /> */}
     {/* <Planets /> */}
     {/* <GymRoutineList /> */}
-    <UseState />
+    {/* <UseState /> */}
     {/* <InputValue /> */}
+    <ShowHide />
   </React.StrictMode>,
 )
