@@ -10,7 +10,8 @@ import './index.css'
 // import GymRoutineList from './rendering lists/GymRoutineList'
 // import UseState from './state/UseState.jsx'
 // import InputValue from './state/InputValue'
-import ShowHide from './state/showHide'
+// import ShowHide from './state/showHide'
+import TextColor from './state/TextColor'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <GymRoutineList /> */}
     {/* <UseState /> */}
     {/* <InputValue /> */}
-    <ShowHide />
+    {/* <ShowHide /> */}
+    <TextColor />
   </React.StrictMode>,
 )
