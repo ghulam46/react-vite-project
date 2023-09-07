@@ -18,7 +18,12 @@ export default function ComponentMemory() {
     return(
         <div className='p-10'>
             <button className='btn btn-outline btn-primary mb-2' onClick={handleClick}>Next</button>
-            <h2 className='text-2xl'><i>{sculpture.name}</i></h2>
+            <h2 className='text-4xl mb-3'>
+                <i>{sculpture.name}</i> 
+                <h2 className='text-sm'>
+                    {''}by {sculpture.artist}
+                </h2>
+            </h2>
             <h3 className='mb-2'>({index + 1} of {sculptureList.length})</h3>
             <img
                 src={sculpture.url}
