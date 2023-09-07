@@ -1,12 +1,23 @@
+import { useState } from 'react';
 import { sculptureList } from './Data.jsx'
 
 export default function ComponentMemory() {
-    let index = 0;
+    const [index, setIndex] = useState(0);
+    const [showText, setShowText] = useState(false);
+
     let sculpture = sculptureList[index];
+
+    function handleClick() {
+        setIndex((index + 1) % sculptureList.length)
+    }
+
+    function handleMoreClick() {
+        setShowText(!showText)
+    }
     
     return(
         <div className='p-10'>
-            <button className='btn btn-outline btn-primary mb-2'>Next</button>
+            <button className='btn btn-outline btn-primary mb-2' onClick={handleClick}>Next</button>
             <h2 className='text-2xl'><i>{sculpture.name}</i></h2>
             <h3 className='mb-2'>({index + 1} of {sculptureList.length})</h3>
             <img
@@ -14,7 +25,8 @@ export default function ComponentMemory() {
                 alt={sculpture.alt}
                 style={{width: 150}}
             />
-            <p className='mt-2' style={{width: 600}}>{sculpture.description}</p>
+            <button className='btn btn-info mt-3' onClick={handleMoreClick}>{showText ? 'Hide' : 'Show'} Descriptions</button>
+            {showText && <p className='mt-2' style={{width: 600}}>{sculpture.description}</p>}
         </div>
     );
 }
