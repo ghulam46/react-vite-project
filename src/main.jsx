@@ -11,7 +11,8 @@ import './index.css'
 // import UseState from './state/UseState.jsx'
 // import InputValue from './state/InputValue'
 // import ShowHide from './state/showHide'
-import TextColor from './state/TextColor'
+// import TextColor from './state/TextColor'
+import ComponentMemory from './state/ComponentMemory'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <UseState /> */}
     {/* <InputValue /> */}
     {/* <ShowHide /> */}
-    <TextColor />
+    {/* <TextColor /> */}
+    <ComponentMemory />
   </React.StrictMode>,
 )
