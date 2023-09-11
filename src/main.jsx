@@ -12,7 +12,8 @@ import './index.css'
 // import InputValue from './state/InputValue'
 // import ShowHide from './state/showHide'
 // import TextColor from './state/TextColor'
-import ComponentMemory from './state/ComponentMemory'
+// import ComponentMemory from './state/ComponentMemory'
+import ToDoList from './state/toDoList'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <InputValue /> */}
     {/* <ShowHide /> */}
     {/* <TextColor /> */}
-    <ComponentMemory />
+    {/* <ComponentMemory /> */}
+    <ToDoList />
   </React.StrictMode>,
 )
