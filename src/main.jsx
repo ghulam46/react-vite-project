@@ -14,7 +14,8 @@ import './index.css'
 // import TextColor from './state/TextColor'
 // import ComponentMemory from './state/ComponentMemory'
 // import ToDoList from './state/toDoList'
-import ProfileProps from './props/ProfileProps'
+// import ProfileProps from './props/challenge1/ProfileProps'
+import AdjustImage from './props/challenge2/AdjustImage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <TextColor /> */}
     {/* <ComponentMemory /> */}
     {/* <ToDoList /> */}
-    <ProfileProps />
+    {/* <ProfileProps /> */}
+    <AdjustImage />
   </React.StrictMode>,
 )
