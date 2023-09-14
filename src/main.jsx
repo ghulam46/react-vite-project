@@ -13,7 +13,8 @@ import './index.css'
 // import ShowHide from './state/showHide'
 // import TextColor from './state/TextColor'
 // import ComponentMemory from './state/ComponentMemory'
-import ToDoList from './state/toDoList'
+// import ToDoList from './state/toDoList'
+import ProfileProps from './props/ProfileProps'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <ShowHide /> */}
     {/* <TextColor /> */}
     {/* <ComponentMemory /> */}
-    <ToDoList />
+    {/* <ToDoList /> */}
+    <ProfileProps />
   </React.StrictMode>,
 )
