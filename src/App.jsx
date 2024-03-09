@@ -15,18 +15,18 @@ function App() {
   const isGreen = true;
 
   return (
-    <div className='App'>
-      {age >= 18 ? <h1>over age</h1> : <h1>under age</h1>}
-      <h1 style={{color: isGreen ? "green" : "red"}}>this is color</h1>
-    </div>
-    // <>
-    //   <Header />
-    //   <Profile /><br />
-    //   <User name= "Ghulam" title="Frontend Developer" email="ghulam@gmail.com"/>
-    //   <User name= "Ammar" title="Backend Developer" email="ammar@gmail.com"/>
-    //   <button onClick={handleClick}>Like ({likes})</button>
-    //   <Header author="Sandika Galih"/>
-    // </>
+    // <div className='App'>
+    //   {age >= 18 ? <h1>over age</h1> : <h1>under age</h1>}
+    //   <h1 style={{color: isGreen ? "green" : "red"}}>this is color</h1>
+    // </div>
+    <>
+      <Header />
+      <Profile /><br />
+      <User name= "Ghulam" title="Frontend Developer" email="ghulam@gmail.com"/>
+      <User name= "Ammar" title="Backend Developer" email="ammar@gmail.com"/>
+      <button className='btn btn-primary' onClick={handleClick}>Like ({likes})</button>
+      <Header author="Sandika Galih"/>
+    </>
   );
 }
 
