@@ -17,8 +17,11 @@ import './index.css'
 // import ProfileProps from './props/challenge1/ProfileProps'
 // import AdjustImage from './props/challenge2/AdjustImage'
 // import ChildrenProp from './props/challenge3/childrenProp'
+// import Deklaratif from './Deklaratif Code/deklaratif'
 
-import Deklaratif from './Deklaratif Code/deklaratif'
+// Project Dicoding Course
+import Part1 from './project-dicoding-course/part1'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -36,6 +39,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* <ProfileProps /> */}
     {/* <AdjustImage /> */}
     {/* <ChildrenProp /> */}
-    <Deklaratif/>
+    {/* <Deklaratif/> */}
+
+    {/* Project Dicoding Course */}
+    <Part1 />
   </React.StrictMode>,
 )
